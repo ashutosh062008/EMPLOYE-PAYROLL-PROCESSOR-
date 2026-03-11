@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About System - PayrollPro</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .about-h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+        }
+
+        .info-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+            color: #fff;
+        }
+
+        .info-card {
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 1.75rem;
+            transition: border-color 0.2s, transform 0.2s;
+        }
+
+        .info-card:hover {
+            border-color: rgba(99, 102, 241, 0.3);
+            transform: translateY(-3px);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.25rem;
+            margin-top: 0;
+        }
+
+        .card {
+            gap: 0;
+        }
+
+        .tech-stack {
+            display: flex;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .tech-badge {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 0.75rem;
+            padding: 0.35rem 0.85rem;
+            border-radius: 100px;
+            border: 1px solid var(--card-border);
+            color: var(--text-secondary);
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .back-btn {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            padding: 0.9rem 2rem;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px -5px rgba(99, 102, 241, 0.4);
+        }
+
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 28px -5px rgba(99, 102, 241, 0.5);
+            filter: brightness(1.1);
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid var(--card-border);
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="sidebar">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">₹</div>
+            <span>PayrollPro</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-item"><span>📊 Dashboard</span></a></li>
+            <li><a href="about.html" class="nav-item active"><span>ℹ️ About System</span></a></li>
+            <li><a href="settings.html" class="nav-item"><span>⚙️ Settings</span></a></li>
+        </ul>
+    </nav>
+
+    <div class="main-layout">
+        <div class="container content-section">
+            <header>
+                <h1 class="about-h1">About the System</h1>
+                <p>Technical architecture and design principles of PayrollPro.</p>
+            </header>
+
+            <div class="card">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>🏗️ OOP Architecture</h3>
+                        <p>Built using ES6 classes and inheritance. A base <code>Employee</code> class provides
+                            polymorphic <code>calculateSalary</code> methods across <code>FullTime</code>,
+                            <code>Contract</code>, and <code>Hourly</code> subclasses.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>🎨 Modern UI/UX</h3>
+                        <p>Featuring a state-of-the-art dark theme with Glassmorphism effects, CSS Grid layouts, and
+                            hardware-accelerated micro-animations for a premium desktop experience.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>💾 Data Resilience</h3>
+                        <p>Powered by Browser <code>localStorage</code>, your payroll records are saved permanently and
+                            persist even after closing the browser or refreshing the page.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>📊 Advanced Logic</h3>
+                        <p>Handles complex payroll rules: hourly overtime at 1.5× after 40 hours, dynamic custom tax
+                            rates for contracts, and a benefits deduction model for full-time employees.</p>
+                    </div>
+                </div>
+
+                <hr class="divider">
+
+                <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem;">Tech Stack</p>
+                <div class="tech-stack">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">Vanilla JavaScript</span>
+                    <span class="tech-badge">ES6 Classes</span>
+                    <span class="tech-badge">localStorage API</span>
+                    <span class="tech-badge">CSS Grid / Flexbox</span>
+                    <span class="tech-badge">Google Fonts</span>
+                    <span class="tech-badge">Glassmorphism</span>
+                </div>
+
+                <div class="btn-group" style="margin-top: 2.5rem;">
+                    <a href="index.html" class="back-btn">← Back to Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
