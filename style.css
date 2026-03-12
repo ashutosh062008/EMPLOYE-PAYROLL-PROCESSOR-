@@ -1,30 +1,30 @@
-/* Premium Professional Dark Theme - CSS Variables */
+
 :root {
     --bg-main: #0a0a0c;
-    /* Near black */
+    
     --card-bg: rgba(23, 23, 26, 0.7);
-    /* Deep zinc with transparency */
+  
     --card-border: rgba(255, 255, 255, 0.08);
-    /* Subtle border */
+    
     --text-primary: #f4f4f5;
-    /* Zinc 100 */
+    
     --text-secondary: #a1a1aa;
-    /* Zinc 400 */
+   
     --text-muted: #71717a;
-    /* Zinc 500 */
+    
     --accent-primary: #6366f1;
-    /* Indigo 500 */
+   
     --accent-secondary: #8b5cf6;
-    /* Purple 500 */
+    
     --accent-glow: rgba(99, 102, 241, 0.3);
     --success-color: #10b981;
-    /* Emerald 500 */
+    
     --danger-color: #ef4444;
-    /* Red 500 */
+    
     --warning-color: #f59e0b;
-    /* Amber 500 */
+    
     --input-bg: #09090b;
-    /* Zinc 950 */
+    
     --font-family: 'Inter', system-ui, -apple-system, sans-serif;
     --transition-fast: 0.2s ease;
     --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -47,7 +47,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ─── Sidebar ─────────────────────────────────────────────── */
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -123,7 +123,7 @@ body {
     border: 1px solid rgba(99, 102, 241, 0.2);
 }
 
-/* ─── Main layout wrapper ─────────────────────────────────── */
+
 .main-layout {
     margin-left: 220px;
     flex: 1;
@@ -159,7 +159,7 @@ body {
     }
 }
 
-/* Background Ambient Glows */
+
 body::before,
 body::after {
     content: '';
@@ -235,7 +235,7 @@ header p {
     }
 }
 
-/* Glassmorphism Cards */
+
 .card {
     background: var(--card-bg);
     backdrop-filter: blur(20px);
@@ -346,7 +346,7 @@ select:focus {
     transform: translateY(0);
 }
 
-/* Results Display */
+
 .results-section {
     min-width: 0;
 }
@@ -524,7 +524,7 @@ select:focus {
     }
 }
 
-/* Custom Scrollbar */
+
 ::-webkit-scrollbar {
     width: 10px;
 }
