@@ -1,7 +1,7 @@
-// Core Data Storage Key
+
 const STORAGE_KEY = 'payroll_records';
 
-// Base Employee Class
+
 class Employee {
     constructor(name, basePay, taxRate) {
         this.name = name;
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `
     };
 
-    // Initial load
+   
     refreshUI();
 
     if (empType) {
